@@ -1,8 +1,8 @@
 {
-  "name": "nisch-site",
+  "name": "tyin-site",
   "description": "personal website",
   "version": "1.0.0",
-  "author": "Nischal Mainali",
+  "author": "Tong Yin",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",
     "@mdx-js/react": "^1.6.18",

@@ -56,7 +56,7 @@ export default function PostsPage({ data }) {
                       } = node.frontmatter;
                       const { slug } = node.fields;
                       return (
-                        <li key={index} className="mb-px35">
+                        <li key={index} className="mb-px25">
                           {hook_image ? (
                             <Img
                               fixed={hook_image.childImageSharp.fixed}

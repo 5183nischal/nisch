@@ -54,13 +54,6 @@ export default function IndexPage({ data }) {
               3AI
             </a>. 
           </p>
-          Here&apos;s my {" "}
-          <a
-              href="https://nischalmainali.xyz/static/cv-4fdbc61efcaff4091d77daebf8ed8197.pdf"
-              className=" border-b border-white hover:border-white"
-            >
-              CV
-            </a>. 
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {
               return (
@@ -71,11 +64,12 @@ export default function IndexPage({ data }) {
         </div>
         <div
           id="photo"
-          className="md:flex-shrink-3 md:mr-px50 md:ml-px20 md:overflow-hidden md:w-px1150">
+          className="md:flex-shrink-3 md:mr-px500 md:ml-px20 md:overflow-hidden md:w-px1150"
+        >
           <Img
             fluid={photo}
             alt="cover photo"
-            className="my-px10 md:h-px470"
+            className="my-px20 md:h-px760"
           ></Img>
         </div>
       </section>

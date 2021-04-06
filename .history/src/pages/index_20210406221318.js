@@ -51,7 +51,7 @@ export default function IndexPage({ data }) {
               href={cv}
               className=" border-b border-white hover:border-white"
             >
-              3AI
+              CV
             </a>. 
           </p>
           Here&apos;s my {" "}
@@ -59,7 +59,7 @@ export default function IndexPage({ data }) {
               href="https://nischalmainali.xyz/static/cv-4fdbc61efcaff4091d77daebf8ed8197.pdf"
               className=" border-b border-white hover:border-white"
             >
-              CV
+              3AI
             </a>. 
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {
