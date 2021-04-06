@@ -52,7 +52,19 @@ export default function IndexPage({ data }) {
               className=" border-b border-white hover:border-white"
             >
               3AI
-            </a>. 
+            </a>.  
+          </p>
+          <p>Here&apos;s my 
+          {" "}
+          {data.allpdf.edges.map((file, index) => {
+          return (
+            <li key={`pdf-${index}`}>
+              <a href={file.node.publicURL} download>
+                CV
+              </a>
+            </li>
+            )
+          })}
           </p>
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {
@@ -108,6 +120,15 @@ export const query = graphql`
             pngQuality: 100
           ) {
             ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+    {
+      allpdf(filter: { extension: { eq: "pdf" } }) {
+        edges {
+          node {
+            publicURL
           }
         }
       }

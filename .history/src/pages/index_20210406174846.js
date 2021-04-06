@@ -52,7 +52,16 @@ export default function IndexPage({ data }) {
               className=" border-b border-white hover:border-white"
             >
               3AI
-            </a>. 
+            </a>.  
+          </p>
+          <p>Here is my 
+          {" "}
+          <a
+              href=""
+              className=" border-b border-white hover:border-white"
+            >
+              CV
+            </a>.
           </p>
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {

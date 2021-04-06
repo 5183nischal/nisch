@@ -5,7 +5,6 @@ import LayoutBlack from "../components/LayoutIndex";
 import SEO from "../components/seo";
 import WritingGroup from "../components/WritingGroup";
 import Img from "gatsby-image";
-import cv from "../../cv.pdf";
 
 export default function IndexPage({ data }) {
   const groups = data.allMdx.group;
@@ -48,11 +47,14 @@ export default function IndexPage({ data }) {
             </a>{" "} 
             and machines at {" "}
           <a
-              href={cv}
+              href="https://elsc.huji.ac.il/"
               className=" border-b border-white hover:border-white"
             >
               3AI
-            </a>. 
+            </a> {" "}  
+          , I focus on bringing AI to scale.
+          In particular, I am interested in the question of responsibility in complex systems
+          and adversarial responses to malicious systems.
           </p>
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {

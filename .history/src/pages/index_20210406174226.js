@@ -5,7 +5,6 @@ import LayoutBlack from "../components/LayoutIndex";
 import SEO from "../components/seo";
 import WritingGroup from "../components/WritingGroup";
 import Img from "gatsby-image";
-import cv from "../../cv.pdf";
 
 export default function IndexPage({ data }) {
   const groups = data.allMdx.group;
@@ -48,11 +47,20 @@ export default function IndexPage({ data }) {
             </a>{" "} 
             and machines at {" "}
           <a
-              href={cv}
+              href="/public/static/cv.pdf"
               className=" border-b border-white hover:border-white"
             >
               3AI
-            </a>. 
+            </a>.  
+          </p>
+          <p>Here is my 
+          {" "}
+          <a
+              href=""
+              className=" border-b border-white hover:border-white"
+            >
+              CV
+            </a>.
           </p>
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {

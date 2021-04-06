@@ -5,7 +5,6 @@ import LayoutBlack from "../components/LayoutIndex";
 import SEO from "../components/seo";
 import WritingGroup from "../components/WritingGroup";
 import Img from "gatsby-image";
-import cv from "../../cv.pdf";
 
 export default function IndexPage({ data }) {
   const groups = data.allMdx.group;
@@ -26,7 +25,7 @@ export default function IndexPage({ data }) {
       >
         <div
           id="text"
-          className="md:ml-px80 md:mr-px20 md:max-w-px300 md:flex-shrink"
+          className="md:ml-px80 md:mr-px20 md:max-w-px400 md:flex-shrink-2"
         >
           <h1 className="my-px15 font-helvetica text-p7r font-bold leading-1p4em uppercase">
             About
@@ -39,20 +38,30 @@ export default function IndexPage({ data }) {
             >
               Nischal
             </a>{" "} 
-            and I study minds at {" "}
+            and I study minds and machines.
+          </p>
+          <p className="my-px10 hyphens-auto">
+          At {" "}
           <a
               href="https://elsc.huji.ac.il/"
               className=" border-b border-white hover:border-white"
             >
               ELSC
             </a>{" "} 
-            and machines at {" "}
+            , I study the learning and computational property of the brain and Artificial Neural Networks.
+          More broadly, I am interested in philosophy of intentionality.
+          </p>
+          <p className="my-px10 hyphens-auto">
+          At {" "}
           <a
-              href={cv}
+              href="https://elsc.huji.ac.il/"
               className=" border-b border-white hover:border-white"
             >
               3AI
-            </a>. 
+            </a> {" "}  
+          , I focus on bringing AI to scale.
+          In particular, I am interested in the question of responsibility in complex systems
+          and adversarial responses to malicious systems.
           </p>
           <div id="writings" className="mx-3/50 md:mx-0">
             {groups.map((group, index) => {
@@ -84,7 +93,7 @@ IndexPage.propTypes = {
 export const query = graphql`
   query GetContent {
     allMdx(sort: { order: DESC, fields: frontmatter___published_at }) {
-      group(field: fields___type, limit: 1) {
+      group(field: fields___type, limit: 2) {
         nodes {
           fields {
             slug

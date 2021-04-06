@@ -36,8 +36,8 @@ export default function WritingGroup({ writings }) {
         <em>
           Older {groupTitle} available{" "}
           <Link
-            to={groupTitle == "work" ? "/work" : "/essays"}
-            title={groupTitle == "work" ? "work" : "/essays"}
+            to={groupTitle == "fragments" ? "/fragments" : "/essays"}
+            title={groupTitle == "fragments" ? "fragments" : "/works"}
             className="text-white border-b hover:border-black"
           >
             here
