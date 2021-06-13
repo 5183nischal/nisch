@@ -35,7 +35,7 @@ export default function AboutPage() {
             <Img fluid={cvPdf.GetImage.childImageSharp.fluid} alt="about"></Img>
           </div>
           <p className="my-px20">
-            I&apos;m a joint PhD student in Philosophy at the 
+            I&apos;m a joint PhD student and I split my time between Philosophy at the 
             {" "}
             <a
               href="https://philosophy.cass.anu.edu.au/"

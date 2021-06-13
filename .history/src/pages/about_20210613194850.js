@@ -1,12 +1,12 @@
 import React from "react";
 import { useStaticQuery, graphql} from "gatsby";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Img from "gatsby-image";
 
 import SEO from "../components/seo";
 import LayoutWhite from "../components/LayoutWriting";
 
-export default function AboutPage() {
+export default function AboutPage({ data }) {
   const cvPdf = useStaticQuery(graphql`
     {
       pdf: file(name: { eq: "cv" }) {
@@ -31,11 +31,11 @@ export default function AboutPage() {
           <h1 className="mt-px20 mb-px30 text-4p5r text-orange tracking-npx6 leading-1em text-black font-helvetica font-thin md:text-5p75r">
             About
           </h1>
-          <div className="my-px20 lg:w-px550">
+          <div className="my-px20 lg:w-px650">
             <Img fluid={cvPdf.GetImage.childImageSharp.fluid} alt="about"></Img>
           </div>
           <p className="my-px20">
-            I&apos;m a joint PhD student in Philosophy at the 
+            I&apos;m a joint PhD student and I split my time between Philosophy at the 
             {" "}
             <a
               href="https://philosophy.cass.anu.edu.au/"
@@ -84,9 +84,9 @@ export default function AboutPage() {
   );
 }
 
-// AboutPage.propTypes = {
-//   data: PropTypes.object.isRequired,
-// };
+AboutPage.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 // export const query = graphql`
 //   query GetImage {
 //     file(relativePath: { eq: "metaInfo/about.jpg" }) {
