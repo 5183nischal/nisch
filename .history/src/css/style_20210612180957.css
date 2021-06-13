@@ -1,0 +1,28 @@
+/*! purgecss start ignore */
+@tailwind base;
+
+/* body {
+  @apply text-textDark;
+  font-family: "cardo";
+  text-rendering: optimizeLegibility;
+  font-style: thin
+} */
+
+h1,
+h2,
+h3 {
+  @apply font-helvetica;
+}
+
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+@responsive {
+  .hyphens-auto {
+    hyphens: auto;
+  }
+  .hyphens-none {
+    hyphens: none;
+  }
+}
