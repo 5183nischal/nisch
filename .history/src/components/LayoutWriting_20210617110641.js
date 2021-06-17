@@ -9,8 +9,8 @@ export default function LayoutWhite({ children, writingInfo }) {
       <section
         className={`${styles.flag} hidden md:block md:w-px7 md:overflow-hidden`}
       ></section>
-      <section className="h-px100 my-px10 mx-2/25 order-4 md:h-auto md:w-px200 md:ml-px20 md:mr-px10 md:mt-px200 md:order-none">
-        <div className="text-center md:text-right md:sticky md:top-px50 md:mr-px80 md:leading-1p5em text-1r text-orange">
+      <section className="h-px100 my-px10 mx-2/25 order-4 md:h-auto md:w-px100 md:ml-px10 md:mr-px10 md:mt-px100 md:order-none">
+        <div className="text-center md:text-right md:sticky md:top-px50 md:leading-1p5em text-1r text-orange">
           <Nav sideBarOnMd={true} bgLight={true}></Nav>
           {writingInfo}
         </div>

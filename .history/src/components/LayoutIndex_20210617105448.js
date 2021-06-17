@@ -14,9 +14,9 @@ export default function LayoutBlack({ children }) {
       {children}
       <section
         id="nav-area-bottom"
-        className="h-px100 mx-px2 my-px10 min-w-px100 md:hidden"
+        className="h-px100 mx-px60 my-px10 min-w-px100 md:hidden"
       >
-        <div className="text-center">
+        <div className="text-left">
           <Nav></Nav>
         </div>
       </section>
